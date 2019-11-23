@@ -3,13 +3,14 @@ var startBtn = document.getElementById("startBtn");
 var x;
 
 function start() {
-  alert("Click the circle target as many as you can!");
-  var time = 9;
-  randomized();
-  target.style.visibility = "unset";
-  target.style.transition = "0.2s";
-  startBtn.disabled = true;
-  timer(time);
+  swal("Click the circle target as many as you can!").then(value => {
+    let time = 9;
+    randomized();
+    target.style.visibility = "unset";
+    target.style.transition = "0.2s";
+    startBtn.disabled = true;
+    timer(time);
+  });
 }
 
 var click = 0;
@@ -22,9 +23,16 @@ function move() {
 }
 
 function resetOnClick() {
-  if (confirm("Are you sure want to reset?")) {
-    reset();
-  }
+  swal({
+    title: "Are you sure want to reset?",
+    text: "You are about to restart the game",
+    buttons: true,
+    dangerMode: true
+  }).then(value => {
+    if (value) {
+      reset();
+    }
+  });
 }
 
 function reset() {
