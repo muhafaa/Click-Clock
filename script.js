@@ -3,7 +3,7 @@ var startBtn = document.getElementById("startBtn");
 var x;
 
 function start() {
-  alert("Hit circle target as many as you can!");
+  alert("Click the circle target as many as you can!");
   var time = 9;
   randomized();
   target.style.visibility = "unset";

@@ -3,9 +3,14 @@ body {
   height: 100%;
   font-family: "Helvetica Neue", "Arial";
   text-align: center;
-  background-image: url(bg.jpg);
-  background-blend-mode: multiply;
   background-color: rgb(109, 116, 136);
+  background: repeating-linear-gradient(
+    -55deg,
+    #222,
+    #222 10px,
+    #333 10px,
+    #333 20px
+  );
 }
 
 .container {
