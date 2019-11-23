@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SIMPLE CLICKING GAME</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CLICK CLOCK</h1>
+
+      <h2>
+        * Better to be played with mouse *
+      </h2>
+      <table style="width: 100%;">
+        <tr>
+          <td style="text-align: right; width: 50%;">
+            <button onclick="start()" id="startBtn">START</button>
+          </td>
+
+          <td style="text-align: left; width: 50%;">
+            <button onclick="resetOnClick()">RESET</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <table class="table">
+      <tr class="list">
+        <td>
+          <p id="click" class="list-one" style="text-align: left;">Score : 0</p>
+        </td>
+
+        <td>
+          <p id="timer" class="list-two">Timer : 10 second(s)</p>
+        </td>
+
+        <td>
+          <p id="" class="list-three">
+            Highest Score : <span id="highest-score">0</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" class="box">
+          <div class="arena">
+            <div id="target" onclick="move()"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>

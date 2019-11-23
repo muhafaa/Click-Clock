@@ -1,0 +1,108 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue", "Arial";
+  text-align: center;
+  background-image: url(bg.jpg);
+  background-blend-mode: multiply;
+  background-color: rgb(109, 116, 136);
+}
+
+.container {
+  padding-top: 0.5vh;
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+  border-bottom: 1vh solid gray;
+  width: 50%;
+  background-color: rgb(70, 80, 105);
+  margin: 0 auto;
+  color: rgb(216, 216, 216);
+}
+
+/*Button
+-----------------*/
+button {
+  outline: 0;
+  font-size: large;
+  background: #fff;
+  border: none;
+  padding: 1vh 4vh;
+  transition: all 0.7s ease-out;
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2), 1px 1px 0 0 #d98e20,
+    2px 2px 0 0 #d98e20, 3px 3px 0 0 #d98e20, 4px 4px 0 0 #d98e20,
+    5px 5px 0 0 #d98e20, 6px 6px 0 0 #d98e20, 7px 7px 0 0 #d98e20,
+    8px 8px 0 0 #d98e20;
+  margin-top: -1vh;
+  margin-bottom: 1vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+button:hover {
+  background-color: rgb(236, 236, 236);
+  transition: all 0.7s ease-out;
+  box-shadow: inset 0 -6px 0 0 rgb(98, 96, 96), 1px 1px 0 0 #d98e20,
+    2px 2px 0 0 #d98e20, 3px 3px 0 0 #d98e20, 4px 4px 0 0 #d98e20,
+    5px 5px 0 0 #d98e20, 6px 6px 0 0 #d98e20;
+}
+button:active {
+  color: #222;
+  transition: all 0.7s ease-out;
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2), 1px 1px 0 0 #d98e20,
+    2px 2px 0 0 #d98e20, 3px 3px 0 0 #d98e20, 4px 4px 0 0 #d98e20;
+}
+
+.table {
+  background-color: rgb(195, 195, 195);
+  padding-top: 1%;
+  margin: 0 auto;
+  width: 50%;
+  border-bottom-left-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+}
+
+.list {
+  font-size: x-large;
+}
+
+.list-one {
+  margin-left: 2vh;
+  text-align: left;
+}
+
+.list-two {
+  text-align: right;
+}
+
+.list-three {
+  text-align: right;
+  margin-right: 2vh;
+}
+
+p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 2vh;
+  border-radius: 2vh;
+}
+
+.arena {
+  background-image: radial-gradient(black 1px, transparent 1%);
+  background-size: 40px 40px;
+  height: 65vh;
+  margin: 0 auto;
+  background-color: rgba(143, 141, 141, 0.671);
+}
+
+#target {
+  position: relative;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: black;
+  visibility: hidden;
+}
