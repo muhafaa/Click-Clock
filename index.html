@@ -23,6 +23,7 @@
 
         <td>
           <p id="timer" class="list-two">Timer : 10 second(s)</p>
+          <audio src="bell2.mp3" id="timer-sound"></audio>
         </td>
 
         <td>
@@ -35,6 +36,7 @@
         <td colspan="3" class="box">
           <div class="arena">
             <div id="target" onclick="move()"></div>
+            <audio src="click.wav" id="target-sound"></audio>
           </div>
         </td>
       </tr>
@@ -47,7 +49,7 @@
                   START
                 </button>
               </td>
-
+              <audio src="button.wav" id="button-sound"></audio>
               <td style="text-align: left; width: 50%;">
                 <button class="btn" onclick="resetOnClick()">RESET</button>
               </td>

@@ -56,6 +56,17 @@ body {
     2px 2px 0 0 #d98e20, 3px 3px 0 0 #d98e20, 4px 4px 0 0 #d98e20;
 }
 
+/* =============== */
+
+/* Audio 
+-------------------*/
+
+audio {
+  display: none;
+}
+
+/* =============== */
+
 .table {
   background-color: rgb(195, 195, 195);
   padding-top: 1%;
